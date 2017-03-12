@@ -1,0 +1,58 @@
+body {
+	background-color: black;
+}
+
+.weather-box {
+	width: 400px;
+	margin: 8% auto auto auto;
+	position: relative;
+	display: table;
+	background-color: white;
+	padding: 30px;
+	border-radius: 10px;
+}
+
+.entity {
+	width: 65px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: cyan;
+
+}
+
+.entity img {
+		display: block;
+		margin: auto;
+		height: 100%;
+		vertical-align: middle;
+}
+
+.entity p {
+	line-height: 60px;
+	text-align: center;	
+}
+
+.box {
+	width: auto;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background-color: #ff5;
+	border-radius: 10px;
+}
+
+.last-entity {
+	height: 40px;
+	border-radius: 10px;
+	background-color: #f5f;
+}
+
+.last-entity p {
+	line-height: 40px;
+	text-align: center;	
+	color: white;
+}
+
+.row-temp p {
+	text-align: center;
+}

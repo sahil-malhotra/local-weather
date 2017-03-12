@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Local Weather</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  
+
+  <script type="text/javascript" src="js/scripts.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="container">
+  	<div class="weather-box">
+      <div class="row row-temp">
+
+        <div class="col-md-3">
+          <span id="sky"><p>Sky</p></span>
+  		    <div class="icon-weather entity">
+            <span id="icon"></span>
+          </div>
+        </div> 
+
+        <div class="col-md-3">
+          <p>Wind</p>
+          <div class="wind-weather entity">
+            <span id="wind"></span>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <p>Pressure</p>
+          <div class="press-weather entity">
+            <span id="press"></span>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <p>Humidity</p>
+          <div class="humid-weather entity">
+            <span id="humid"></span>
+          </div>
+        </div>
+
+      </div>
+      <br>
+      <div class="box">
+        <div class="city-name">
+          <span id="city"></span>
+        </div>
+      </div>  
+      <br>
+      <div class="row">
+
+        <div class="col-md-4">
+        </div>
+
+        <div class="col-md-4 last-entity">
+          <div class="temp-weather">
+            <span id="temp"></span>
+          </div>  
+        </div>
+
+        <div class="col-md-4">
+        </div>
+
+      </div>
+
+  	</div>	
+  </div>
+  
+  
+</body>
+</html>
