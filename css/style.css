@@ -63,3 +63,8 @@ body {
 .row-temp p {
 	text-align: center;
 }
+
+#temp {
+  cursor:  pointer;
+}
+

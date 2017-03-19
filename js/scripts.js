@@ -17,9 +17,9 @@ $(document).ready(function() {
 	
 	function getPosition(position) {
 		console.log("Latitude: " + Math.round(position.coords.latitude*100)/100 + " Longitude: " + Math.round(position.coords.longitude*100)/100);
-		var owmUrl = "https://api.darksky.net/forecast/0123456789abcdef9876543210fedcba/" + Math.round(position.coords.latitude*100)/100 +
-		"," + Math.round(position.coords.longitude*100)/100);
-                fetchWeather(owmUrl);
+		var owmUrl = "http://api.openweathermap.org/data/2.5/weather?lat=" + Math.floor(position.coords.latitude*100)/100  + "&lon=" + 
+                      Math.floor(position.coords.longitude*100)/100 + "&units=metric&appid=fbf3173943619ed6f607c76eb92e5b72";
+        fetchWeather(owmUrl);
 	}
 
 
