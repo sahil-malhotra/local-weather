@@ -17,7 +17,7 @@ $(document).ready(function() {
 	
 	function getPosition(position) {
 		console.log("Latitude: " + Math.round(position.coords.latitude*100)/100 + " Longitude: " + Math.round(position.coords.longitude*100)/100);
-		var owmUrl = "http://api.openweathermap.org/data/2.5/weather?lat=" + Math.floor(position.coords.latitude*100)/100  + "&lon=" + 
+		var owmUrl = "https://api.openweathermap.org/data/2.5/weather?lat=" + Math.floor(position.coords.latitude*100)/100  + "&lon=" + 
                       Math.floor(position.coords.longitude*100)/100 + "&units=metric&appid=fbf3173943619ed6f607c76eb92e5b72";
         fetchWeather(owmUrl);
 	}
@@ -31,7 +31,7 @@ $(document).ready(function() {
 			$("#humid").html("<p>" + json.main.humidity + "%</p>");
 			$("#city").html("<p>" + json.name + ", " + json.sys.country + "</p>");
 			console.log(json.weather[0].icon);
-			$("#icon").html("<img src='http://openweathermap.org/img/w/" + json.weather[0].icon + ".png'/>");
+			$("#icon").html("<img src='https://openweathermap.org/img/w/" + json.weather[0].icon + ".png'/>");
 			
 			$("#temp").html("<p>" + Math.floor(json.main.temp) + " &#8451</p>");
 			celsius =  Math.floor(json.main.temp);
